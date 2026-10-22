@@ -78,6 +78,32 @@ Gemini, OpenRouter or a local Ollama) or choose Hermes sign-in, press **Test con
 If an install step fails, the app still starts without OCR/Figures; retry with `python run.py --install`.
 "Save PDF" needs Edge or Chrome installed (Lab Mate warns if none is found).
 
+## Tools and services Lab Mate uses
+Installed automatically by `python run.py` (internet needed on the first run):
+
+| Tool | Used for | Needs |
+|---|---|---|
+| `pypdf` | Reading the text layer of PDFs | installed automatically |
+| `pymupdf`, `Pillow` | Cropping figures, rendering pages for OCR | installed automatically (helper Python 3.12 environment on Python 3.13+) |
+| `rapidocr-onnxruntime` | OCR of scanned pages | installed automatically |
+| `uv` | Creates the helper environment when your Python is 3.13+ | installed automatically only if needed |
+
+Online services (called with plain HTTPS, no extra package):
+
+| Service | Used for | Key |
+|---|---|---|
+| Crossref | DOI lookup, abstracts, reference lists for the citation graph | none |
+| OpenAlex | Paper search and keyword counts | none; free `OPENALEX_API_KEY` raises the daily limit |
+| Scopus (Elsevier) | More paper search and counts | optional `SCOPUS_API_KEY` |
+| Your model provider | Reading, hypotheses, recommendations, Ask AI | Anthropic key, OpenAI-compatible key (OpenAI, Gemini, OpenRouter, Ollama) or Hermes sign-in, set in Settings |
+
+Not installed by Lab Mate: Edge or Chrome (for Save PDF) and Hermes (only if you choose the Hermes provider).
+Without Scopus, Find papers uses OpenAlex and Crossref only.
+
+## Agent skill
+`skills/lab-mate/SKILL.md` teaches a coding agent (Claude Code and similar) to follow the same Paper, Compare, Result order through the local API.
+Copy the folder to `~/.claude/skills/lab-mate` to use it.
+
 ## Privacy
 With a cloud provider, the paper text is sent to that provider. Use a local model (Ollama) for unpublished or confidential
 papers. Lab Mate recommends only; it never runs an experiment or a simulation.
@@ -90,6 +116,7 @@ requirements.txt    required + optional packages
 .env.example        environment variables the app understands
 app/                the application: server.py, logic.py, llm.py, index.html (single-file UI), assets/
 tests/              UI smoke test, accessibility audit, screenshot helper (need Edge or Chrome)
+skills/             agent skill that follows the website flow
 docs/               logo and the how-it-works figure used in this README
 examples/           fictional papers and sample "my experiment" files to try it with
 ```

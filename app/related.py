@@ -47,6 +47,8 @@ def _json(url, headers=None):
 
 
 def _scopus_key():
+    if os.environ.get("SCOPUS_API_KEY"):
+        return os.environ["SCOPUS_API_KEY"].strip()
     c = configparser.ConfigParser()
     c.read(os.path.expanduser("~/.config/pybliometrics.cfg"))
     return c["Authentication"]["APIKey"].split(",")[0].strip()
