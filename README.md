@@ -17,14 +17,14 @@
 </p>
 
 <p align="center">
-  <a href="#quick-start">Quick start</a> &middot;
-  <a href="#demo-video">Demo video</a> &middot;
-  <a href="#how-it-works">How it works</a> &middot;
-  <a href="#features">Features</a> &middot;
-  <a href="#privacy">Privacy</a>
+  <a href="#-quick-start">🚀 Quick start</a> &middot;
+  <a href="#-demo-video">🎬 Demo video</a> &middot;
+  <a href="#-how-it-works">🧭 How it works</a> &middot;
+  <a href="#-features">✨ Features</a> &middot;
+  <a href="#-privacy">🔒 Privacy</a>
 </p>
 
-## Demo video
+## 🎬 Demo video
 
 <p align="center">
   <a href="https://youtu.be/k4JPXF7u41Q">
@@ -34,32 +34,46 @@
   <sub>Click to watch: <b>LabMate | Your Experimental Research Companion</b></sub>
 </p>
 
-## How it works
+## 🧭 How it works
 
 <p align="center">
   <img src="docs/how-it-works.svg" alt="Lab Mate flow: Paper, Compare, Result" width="100%">
 </p>
 
-1. **Paper.** Upload a PDF (and its supplementary information). The model extracts parameters; code checks that each one exists on the cited page.
-2. **Compare.** Enter your own values. Code, not the AI, converts units, applies tolerances and decides what differs.
-3. **Result.** If parameters differ, you get one recommendation per parameter. If everything matches, you get hidden variables the paper never mentions, with AI-estimated ranges and papers that discuss them.
+1. 📄 **Paper.** Upload a PDF (and its supplementary information). The model extracts parameters; code checks that each one exists on the cited page.
+2. ⚖️ **Compare.** Enter your own values. Code, not the AI, converts units, applies tolerances and decides what differs.
+3. 🎯 **Result.** If parameters differ, you get one recommendation per parameter. If everything matches, you get hidden variables the paper never mentions, with AI-estimated ranges and papers that discuss them.
 
-## Features
+## ✨ Features
 
 | | |
 |---|---|
-| **Verified extraction** | Every parameter links to the exact source text on the page; unverified items are labelled. |
-| **Deterministic comparison** | Unit conversion, tolerances, ranges. No model involved. |
-| **Ranked hypotheses** | Evidence for and against, a test plan, and the data you should collect next. |
-| **Per-parameter advice** | A short recommendation and reason for each differing parameter, with a Details page. |
-| **Hidden variables** | What the paper leaves out, with ranges labelled as AI estimates. |
-| **Method flowchart and figures** | The paper's method as steps; Methods and Results figures cropped from the PDF. |
-| **Find papers** | OpenAlex, Scopus and Crossref search, citation network, keyword co-occurrence. |
-| **Ask AI** | Answers only from the paper pages; anything else is labelled "Not from the paper". |
-| **Reports** | Save the result as a self-contained HTML or PDF file for your lab notebook. |
-| **Scanned PDFs** | OCR fallback for image-only pages (installed automatically on first run). |
+| ✅ **Verified extraction** | Every parameter links to the exact source text on the page; unverified items are labelled. |
+| ⚖️ **Deterministic comparison** | Unit conversion, tolerances, ranges. No model involved. |
+| 🧠 **Ranked hypotheses** | Evidence for and against, a test plan, and the data you should collect next. |
+| 💡 **Per-parameter advice** | A short recommendation and reason for each differing parameter, with a Details page. |
+| 🕵️ **Hidden variables** | What the paper leaves out, with ranges labelled as AI estimates. |
+| 🗺️ **Method flowchart and figures** | The paper's method as steps; Methods and Results figures cropped from the PDF. |
+| 🔎 **Find papers** | OpenAlex, Scopus and Crossref search, citation network, keyword co-occurrence. |
+| 💬 **Ask AI** | Answers only from the paper pages; anything else is labelled "Not from the paper". |
+| 📑 **Reports** | Save the result as a self-contained HTML or PDF file for your lab notebook. |
+| 🖨️ **Scanned PDFs** | OCR fallback for image-only pages (installed automatically on first run). |
 
-## Quick start
+## 🪜 Setup, step by step
+
+| Step | What to do | Icon |
+|---|---|---|
+| 1 | Install **Python 3.9+** (3.11 or 3.12 recommended) from https://www.python.org/downloads/ and tick "Add Python to PATH". | 🐍 |
+| 2 | Get the code: `git clone https://github.com/naeembayaksud-ship-it/lab-mate`, or download the ZIP and unzip it. | 📥 |
+| 3 | Start it: double-click `install.bat` (Windows) or `install.command` (macOS), or run `python run.py` (Linux: `./install.command`). | ▶️ |
+| 4 | Wait on the first run (about 4 minutes, internet needed). Dependencies install by themselves. Your browser opens at http://127.0.0.1:8650. | ⏳ |
+| 5 | Click **Settings** (top bar), choose a provider, paste your own API key (or pick Hermes sign-in), press **Test connection**, then **Save**. | 🔑 |
+| 6 | Drop a paper PDF on the page. Follow **Paper → Compare → Result**. To practise, use `examples/demo_paper_aspirin.pdf`. | 🧪 |
+| 7 | Optional: install Edge or Chrome for **Save PDF**, and add `OPENALEX_API_KEY` / `SCOPUS_API_KEY` for more paper search. | 🌐 |
+
+Free key options for step 5: Google AI Studio (https://aistudio.google.com/apikey, Base URL `https://generativelanguage.googleapis.com/v1beta/openai`, model `gemini-2.5-flash`), OpenRouter (`:free` models), or a local Ollama (`http://localhost:11434/v1`, no key).
+
+## 🚀 Quick start
 
 ```
 git clone https://github.com/naeembayaksud-ship-it/lab-mate
@@ -80,7 +94,7 @@ Gemini, OpenRouter or a local Ollama) or choose Hermes sign-in, press **Test con
 If an install step fails, the app still starts without OCR/Figures; retry with `python run.py --install`.
 "Save PDF" needs Edge or Chrome installed (Lab Mate warns if none is found).
 
-## Tools and services Lab Mate uses
+## 🧰 Tools and services Lab Mate uses
 Installed automatically by `python run.py` (internet needed on the first run):
 
 | Tool | Used for | Needs |
@@ -102,15 +116,15 @@ Online services (called with plain HTTPS, no extra package):
 Not installed by Lab Mate: Edge or Chrome (for Save PDF) and Hermes (only if you choose the Hermes provider).
 Without Scopus, Find papers uses OpenAlex and Crossref only.
 
-## Agent skill
+## 🤖 Agent skill
 `skills/lab-mate/SKILL.md` teaches a coding agent (Claude Code and similar) to follow the same Paper, Compare, Result order through the local API.
 Copy the folder to `~/.claude/skills/lab-mate` to use it.
 
-## Privacy
+## 🔒 Privacy
 With a cloud provider, the paper text is sent to that provider. Use a local model (Ollama) for unpublished or confidential
 papers. Lab Mate recommends only; it never runs an experiment or a simulation.
 
-## What is in the repo
+## 📁 What is in the repo
 
 ```
 run.py              one-command launcher (any OS)
@@ -123,12 +137,12 @@ docs/               logo and the how-it-works figure used in this README
 examples/           fictional papers and sample "my experiment" files to try it with
 ```
 
-## Try it without your own data
+## 🧪 Try it without your own data
 Upload `examples/demo_paper_aspirin.pdf`, open Compare, and enter the values from `examples/user_A_temperature_mistake.json`
 (water bath 60 C instead of 75 C) or `user_B_all_same_low_yield.json` (everything matches, yield is still low). A harder
 fictional paper with planted causes is in `examples/silver_nanoparticles/`. All example data is fictional; see `examples/README.md`.
 
-## Development
+## 🛠️ Development
 ```
 python run.py --no-browser          # server only
 python tests/smoke.py <project-id>  # clicks through the UI in headless Edge (server must be running)
@@ -136,14 +150,14 @@ python tests/smoke.py <project-id>  # clicks through the UI in headless Edge (se
 Optional search keys: Scopus (`~/.config/pybliometrics.cfg`) and `OPENALEX_API_KEY`. Without them, Find papers uses the free
 OpenAlex and Crossref APIs, and OpenAlex may hit its daily limit.
 
-## Known limits
+## ⚠️ Known limits
 - Hypothesis quality depends on the model you connect. A small local model may return invalid JSON.
 - Keyword percentages are title/abstract co-occurrence, not the size of a variable's effect.
 - Hidden-variable ranges are AI estimates and are labelled as such.
 - Save PDF needs Edge or Chrome (set `PDF_BROWSER` for another path). Tested on Windows; macOS and Linux are untested.
 
-## Papers and data
+## 📄 Papers and data
 Papers you upload keep their own rights.
 
-## Running the tests (optional)
+## ✅ Running the tests (optional)
 `pip install aiohttp`, have Edge or Chrome installed, then run the scripts in `tests/` (they were written and tested on Windows).
