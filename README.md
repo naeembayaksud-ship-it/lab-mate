@@ -67,6 +67,8 @@ cd lab-mate
 python run.py
 ```
 
+No terminal? After downloading the repo, double-click `install.bat` (Windows) or `install.command` (macOS; on Linux run `./install.command`). Both just run `python run.py`.
+
 Needs Python 3.9 or newer and an internet connection on the first run. `python run.py` installs everything by itself:
 `pypdf`, plus `pymupdf`, `Pillow` and `rapidocr-onnxruntime` for scanned-PDF OCR and the Figures tab. If your Python is 3.13
 or newer (no OCR builds exist yet), it creates a small helper environment with Python 3.12 in `.labmate_aux/` (using `uv`,
@@ -142,3 +144,6 @@ OpenAlex and Crossref APIs, and OpenAlex may hit its daily limit.
 
 ## Papers and data
 Papers you upload keep their own rights.
+
+## Running the tests (optional)
+`pip install aiohttp`, have Edge or Chrome installed, then run the scripts in `tests/` (they were written and tested on Windows).
