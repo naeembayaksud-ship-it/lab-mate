@@ -1,0 +1,17 @@
+__pycache__/
+node_modules/
+hermes_home/
+.env
+*.log
+app/projects/*
+app/uploads/*
+app/saved/
+!app/projects/.gitkeep
+!app/uploads/.gitkeep
+app/settings.json
+
+tests/shots/
+examples/**/_raw.pdf
+.venv/
+venv/
+*.mp4

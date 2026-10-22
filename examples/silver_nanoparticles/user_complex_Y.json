@@ -1,0 +1,156 @@
+{
+ "notes": "FICTIONAL complex demo scenario Y",
+ "kind": "experiment",
+ "parameter": {
+  "Silver nitrate purity": {
+   "value": "99.9",
+   "unit": "%"
+  },
+  "Trisodium citrate purity": {
+   "value": "99",
+   "unit": "%"
+  },
+  "Sodium borohydride purity": {
+   "value": "98",
+   "unit": "%"
+  },
+  "L-ascorbic acid purity": {
+   "value": "99",
+   "unit": "%"
+  },
+  "PVP molecular weight": {
+   "value": "40000",
+   "unit": "g/mol"
+  },
+  "Silver nitrate concentration in seed solution": {
+   "value": "0.25",
+   "unit": "mM"
+  },
+  "Citrate concentration in seed solution": {
+   "value": "1.0",
+   "unit": "mM"
+  },
+  "Silver nitrate concentration in growth feed": {
+   "value": "1.0",
+   "unit": "mM"
+  },
+  "Ascorbic acid concentration in growth solution": {
+   "value": "10",
+   "unit": "mM"
+  },
+  "PVP concentration in growth solution": {
+   "value": "0.5",
+   "unit": "wt %"
+  },
+  "Sodium borohydride solution concentration": {
+   "value": "0.1",
+   "unit": "mM"
+  },
+  "Sodium borohydride solution volume": {
+   "value": "0.6",
+   "unit": "mL"
+  },
+  "Seed solution volume": {
+   "value": "20",
+   "unit": "mL"
+  },
+  "Aged seed volume added to growth solution": {
+   "value": "2",
+   "unit": "mL"
+  },
+  "Growth solution volume": {
+   "value": "18",
+   "unit": "mL"
+  },
+  "Silver nitrate feed volume": {
+   "value": "10",
+   "unit": "mL"
+  },
+  "Growth stage stirring speed": {
+   "value": "400",
+   "unit": "rpm"
+  },
+  "Seed synthesis temperature": {
+   "value": "25",
+   "unit": "°C"
+  },
+  "Seed stirring time after borohydride addition": {
+   "value": "5",
+   "unit": "min"
+  },
+  "Seed aging time (standard)": {
+   "value": "30",
+   "unit": "min"
+  },
+  "Growth pH": {
+   "value": "10.0",
+   "unit": ""
+  },
+  "Growth feed addition rate (standard)": {
+   "value": "0.5",
+   "unit": "mL/min"
+  },
+  "Post-addition stirring time": {
+   "value": "20",
+   "unit": "min"
+  },
+  "Seed reactor volume": {
+   "value": "50",
+   "unit": "mL"
+  },
+  "Seed reactor type": {
+   "value": "jacketed glass reactor with circulating bath and magnetic stirring",
+   "unit": ""
+  },
+  "Feed delivery equipment": {
+   "value": "syringe pump with PTFE tube into the vortex",
+   "unit": ""
+  },
+  "DLS backscatter angle": {
+   "value": "173",
+   "unit": "°"
+  },
+  "Centrifugation for conversion analysis": {
+   "value": "12000 g for 20 min",
+   "unit": ""
+  },
+  "Population-balance model nucleation rate constant": {
+   "value": "3.2e-3",
+   "unit": "s-1"
+  },
+  "Model number of size bins": {
+   "value": "200",
+   "unit": ""
+  },
+  "Seed reactor type and volume": {
+   "value": "jacketed glass reactor, 50 mL",
+   "unit": "mL"
+  },
+  "Stirrer type": {
+   "value": "PTFE-coated magnetic bar",
+   "unit": ""
+  }
+ },
+ "user_results": {
+  "Mean diameter under standard conditions": {
+   "value": "31",
+   "unit": "nm",
+   "replicates": "3"
+  },
+  "PDI under standard conditions": {
+   "value": "0.24",
+   "unit": "",
+   "replicates": "3"
+  },
+  "LSPR peak under standard conditions": {
+   "value": "417",
+   "unit": "nm",
+   "replicates": "3"
+  },
+  "Silver conversion": {
+   "value": "78",
+   "unit": "%",
+   "replicates": "3"
+  }
+ }
+}

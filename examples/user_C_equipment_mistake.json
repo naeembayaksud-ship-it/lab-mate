@@ -1,0 +1,68 @@
+{
+ "notes": "FICTIONAL demo C: no magnetic stirrer (hot plate, swirled by hand) and gravity filtration instead of a Buchner funnel.",
+ "kind": "experiment",
+ "parameter": {
+  "Salicylic acid amount": {
+   "value": 2.0,
+   "unit": "g"
+  },
+  "Salicylic acid purity": {
+   "value": 99,
+   "unit": "%"
+  },
+  "Acetic anhydride volume": {
+   "value": 5.0,
+   "unit": "mL"
+  },
+  "Acetic anhydride purity": {
+   "value": 98,
+   "unit": "%"
+  },
+  "Concentrated sulfuric acid catalyst amount": {
+   "value": 0.25,
+   "unit": "mL"
+  },
+  "Reaction time (standard)": {
+   "value": 20,
+   "unit": "min"
+  },
+  "Stirring speed": {
+   "value": 0,
+   "unit": "rpm"
+  },
+  "Ice bath time": {
+   "value": 15,
+   "unit": "min"
+  },
+  "Ice-cold distilled water volume for crystallisation": {
+   "value": 50,
+   "unit": "mL"
+  },
+  "Drying temperature": {
+   "value": 50,
+   "unit": "°C"
+  },
+  "Drying time": {
+   "value": 24,
+   "unit": "h"
+  },
+  "Reaction temperature (standard)": {
+   "value": 75,
+   "unit": "°C"
+  },
+  "Reaction heating configuration": {
+   "value": "Hot plate with hand swirling, no magnetic stirrer"
+  },
+  "Product isolation equipment": {
+   "value": "Gravity filtration funnel"
+  }
+ },
+ "user_results": {
+  "Maximum yield at 75 °C and 20 min": {
+   "value": 70,
+   "unit": "%",
+   "replicates": 3,
+   "uncertainty": "±4 %"
+  }
+ }
+}

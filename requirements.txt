@@ -1,0 +1,6 @@
+# Required
+pypdf>=4.0
+# Optional: scanned PDFs (OCR) and the Figures tab
+pymupdf>=1.24
+Pillow>=10.0
+rapidocr-onnxruntime>=1.3

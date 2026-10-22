@@ -1,0 +1,56 @@
+{
+ "X": {
+  "true_causes": [
+   "seed aging",
+   "manual dropwise addition"
+  ],
+  "decoys_should_rank_low": [
+   "temperature",
+   "pH"
+  ],
+  "match": {
+   "seed aging": [
+    "aging",
+    "ageing"
+   ],
+   "manual dropwise addition": [
+    "dropwise",
+    "manual",
+    "syringe",
+    "addition"
+   ]
+  },
+  "decoy_match": {
+   "temperature": [
+    "temperature"
+   ],
+   "pH": [
+    "ph "
+   ]
+  }
+ },
+ "Y": {
+  "true_causes": [
+   "contamination (water/glassware)",
+   "light exposure of AgNO3 stock"
+  ],
+  "match": {
+   "contamination (water/glassware)": [
+    "chloride",
+    "contamin",
+    "water",
+    "glassware",
+    "clean",
+    "resistiv",
+    "conductiv"
+   ],
+   "light exposure of AgNO3 stock": [
+    "light",
+    "dark",
+    "photo",
+    "storage",
+    "amber"
+   ]
+  }
+ }
+}
