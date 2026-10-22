@@ -98,6 +98,7 @@ requirements.txt    required + optional packages
 .env.example        environment variables the app understands
 app/                the application: server.py, logic.py, llm.py, index.html (single-file UI), assets/
 tests/              UI smoke test, accessibility audit, screenshot helper (need Edge or Chrome)
+docs/               logo and the how-it-works figure used in this README
 examples/           fictional papers and sample "my experiment" files to try it with
 ```
 
