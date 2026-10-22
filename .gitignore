@@ -15,3 +15,5 @@ examples/**/_raw.pdf
 .venv/
 venv/
 *.mp4
+.labmate_aux/
+.labmate_deps_checked

@@ -57,7 +57,7 @@
 | **Find papers** | OpenAlex, Scopus and Crossref search, citation network, keyword co-occurrence. |
 | **Ask AI** | Answers only from the paper pages; anything else is labelled "Not from the paper". |
 | **Reports** | Save the result as a self-contained HTML or PDF file for your lab notebook. |
-| **Scanned PDFs** | OCR fallback for image-only pages (optional install). |
+| **Scanned PDFs** | OCR fallback for image-only pages (installed automatically on first run). |
 
 ## Quick start
 
@@ -67,24 +67,16 @@ cd lab-mate
 python run.py
 ```
 
-Needs Python 3.9 or newer. On the first run Lab Mate installs its one required package (`pypdf`) and opens
-http://127.0.0.1:8650 in your browser. Then:
+Needs Python 3.9 or newer and an internet connection on the first run. `python run.py` installs everything by itself:
+`pypdf`, plus `pymupdf`, `Pillow` and `rapidocr-onnxruntime` for scanned-PDF OCR and the Figures tab. If your Python is 3.13
+or newer (no OCR builds exist yet), it creates a small helper environment with Python 3.12 in `.labmate_aux/` (using `uv`,
+which downloads Python itself). Then your browser opens at http://127.0.0.1:8650.
 
-1. Click **Settings** (top bar).
-2. Pick a provider and paste your own key (see the table below), or choose Hermes sign-in.
-3. Press **Test connection**, then **Save**. Drop a paper PDF on the home screen.
+Next, click **Settings** (top bar), paste your own API key (Anthropic, or any OpenAI-compatible service such as OpenAI,
+Gemini, OpenRouter or a local Ollama) or choose Hermes sign-in, press **Test connection**, then **Save**.
 
-| Option | What you need | Notes |
-|---|---|---|
-| **Anthropic API key** | key from console.anthropic.com | Billed to your account. Default model `claude-sonnet-4-5`; change it in Settings. |
-| **OpenAI-compatible API** | key + base URL | OpenAI, OpenRouter, or a local server such as Ollama (`http://localhost:11434/v1`, no key). Quality depends on the model. |
-| **Hermes sign-in (OAuth)** | the Hermes CLI, signed in once (`hermes login`) | Sign-in is handled by Hermes, not by Lab Mate. |
-
-The key stays on your computer in `app/settings.json` (ignored by git, never sent to the browser). Environment variables such as
-`ANTHROPIC_API_KEY` also work and win over the file; see `.env.example`.
-
-Optional extras (scanned-PDF OCR and the Figures tab): `python run.py --install`. These need Python 3.11 or 3.12 (no builds
-exist yet for 3.13+). The app works without them.
+If an install step fails, the app still starts without OCR/Figures; retry with `python run.py --install`.
+"Save PDF" needs Edge or Chrome installed (Lab Mate warns if none is found).
 
 ## Privacy
 With a cloud provider, the paper text is sent to that provider. Use a local model (Ollama) for unpublished or confidential
