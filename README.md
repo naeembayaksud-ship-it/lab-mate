@@ -1,13 +1,63 @@
-# Lab Mate
+<p align="center">
+  <img src="docs/logo.png" alt="Lab Mate" width="360">
+</p>
 
-**Experiment failed, or your result differs from the paper?** Lab Mate reads the paper, links every extracted parameter to the
-exact source text (checked by code), compares your values with the paper's (code decides what differs, not the AI), and returns
-ranked hypotheses, a test plan, hidden variables to control, and related papers.
+<h3 align="center">Experiment failed, or your result differs from the paper?</h3>
 
-Flow: **Paper** (read it, verify every parameter) > **Compare** (enter your values) > **Result** (hypotheses, per-parameter
-recommendations, hidden variables, related papers, citation network, report as HTML/PDF).
+<p align="center">
+  Lab Mate reads the paper, links every extracted parameter to the exact source text (checked by code),<br>
+  compares your values with the paper's, and ranks the likely reasons your result differs.
+</p>
 
-Demo video: attached to the [latest release](../../releases/latest).
+<p align="center">
+  <img alt="Python 3.9+" src="https://img.shields.io/badge/python-3.9%2B-0A1526?style=flat-square">
+  <img alt="Runs locally" src="https://img.shields.io/badge/runs-locally-0A1526?style=flat-square">
+  <img alt="Bring your own key" src="https://img.shields.io/badge/model-bring%20your%20own%20key-D97757?style=flat-square">
+  <img alt="Platforms" src="https://img.shields.io/badge/Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-0A1526?style=flat-square">
+</p>
+
+<p align="center">
+  <a href="#quick-start">Quick start</a> &middot;
+  <a href="#demo-video">Demo video</a> &middot;
+  <a href="#how-it-works">How it works</a> &middot;
+  <a href="#features">Features</a> &middot;
+  <a href="#privacy">Privacy</a>
+</p>
+
+## Demo video
+
+<p align="center">
+  <a href="https://youtu.be/k4JPXF7u41Q">
+    <img src="https://img.youtube.com/vi/k4JPXF7u41Q/maxresdefault.jpg" alt="Watch the Lab Mate demo on YouTube" width="760">
+  </a>
+  <br>
+  <sub>Click to watch: <b>LabMate | Your Experimental Research Companion</b></sub>
+</p>
+
+## How it works
+
+<p align="center">
+  <img src="docs/how-it-works.svg" alt="Lab Mate flow: Paper, Compare, Result" width="100%">
+</p>
+
+1. **Paper.** Upload a PDF (and its supplementary information). The model extracts parameters; code checks that each one exists on the cited page.
+2. **Compare.** Enter your own values. Code, not the AI, converts units, applies tolerances and decides what differs.
+3. **Result.** If parameters differ, you get one recommendation per parameter. If everything matches, you get hidden variables the paper never mentions, with AI-estimated ranges and papers that discuss them.
+
+## Features
+
+| | |
+|---|---|
+| **Verified extraction** | Every parameter links to the exact source text on the page; unverified items are labelled. |
+| **Deterministic comparison** | Unit conversion, tolerances, ranges. No model involved. |
+| **Ranked hypotheses** | Evidence for and against, a test plan, and the data you should collect next. |
+| **Per-parameter advice** | A short recommendation and reason for each differing parameter, with a Details page. |
+| **Hidden variables** | What the paper leaves out, with ranges labelled as AI estimates. |
+| **Method flowchart and figures** | The paper's method as steps; Methods and Results figures cropped from the PDF. |
+| **Find papers** | OpenAlex, Scopus and Crossref search, citation network, keyword co-occurrence. |
+| **Ask AI** | Answers only from the paper pages; anything else is labelled "Not from the paper". |
+| **Reports** | Save the result as a self-contained HTML or PDF file for your lab notebook. |
+| **Scanned PDFs** | OCR fallback for image-only pages (optional install). |
 
 ## Quick start
 

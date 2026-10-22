@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="How Lab Mate works: Paper, Compare, Result">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0A1526"/></marker>
+    <style>
+      .t{font-family:Georgia,'Times New Roman',serif;fill:#0A1526}
+      .s{font-family:'Segoe UI',Arial,sans-serif;fill:#525866;font-size:15px}
+      .m{font-family:Consolas,'Courier New',monospace;fill:#B5472A;font-size:12px;letter-spacing:1.5px}
+      .card{fill:#FFFFFF;stroke:#0A1526;stroke-width:1.5}
+      .soft{fill:#F0EFEA;stroke:#E2E0D8;stroke-width:1.5}
+    </style>
+  </defs>
+  <rect width="1200" height="560" fill="#F9F8F6"/>
+  <g fill="none" stroke="#0A1526" stroke-opacity=".06" stroke-width="2">
+    <path d="M0 470 C200 420 300 520 520 470 S900 420 1200 480"/>
+    <path d="M0 500 C200 450 300 550 520 500 S900 450 1200 510"/>
+    <path d="M0 530 C200 480 300 580 520 530 S900 480 1200 540"/>
+  </g>
+  <text x="600" y="52" text-anchor="middle" class="t" font-size="34">Experiment failed, or your result differs from the paper?</text>
+  <text x="600" y="82" text-anchor="middle" class="s">Lab Mate finds what the paper left out, and every claim is checked by code.</text>
+
+  <!-- step 1 -->
+  <rect x="40" y="130" width="300" height="230" rx="8" class="card"/>
+  <text x="62" y="162" class="m">1  PAPER</text>
+  <text x="62" y="198" class="t" font-size="24">Read and verify</text>
+  <text x="62" y="228" class="s">Upload a PDF (and SI).</text>
+  <text x="62" y="252" class="s">The model extracts parameters;</text>
+  <text x="62" y="276" class="s">code confirms each one exists</text>
+  <text x="62" y="300" class="s">on the page: "Verified in paper".</text>
+  <text x="62" y="334" class="s" style="font-size:13px">Method flowchart · Figures · Checklist</text>
+
+  <!-- step 2 -->
+  <rect x="450" y="130" width="300" height="230" rx="8" class="card"/>
+  <text x="472" y="162" class="m">2  COMPARE</text>
+  <text x="472" y="198" class="t" font-size="24">Enter your values</text>
+  <text x="472" y="228" class="s">Same value + unit format.</text>
+  <text x="472" y="252" class="s">Code converts units and applies</text>
+  <text x="472" y="276" class="s">tolerances: Match, Different,</text>
+  <text x="472" y="300" class="s">Within range. Not the AI.</text>
+  <text x="472" y="334" class="s" style="font-size:13px">Materials · Conditions · Equipment</text>
+
+  <!-- step 3 -->
+  <rect x="860" y="130" width="300" height="230" rx="8" class="card"/>
+  <text x="882" y="162" class="m">3  RESULT</text>
+  <text x="882" y="198" class="t" font-size="24">Ranked hypotheses</text>
+  <text x="882" y="228" class="s">Why the result differs, with</text>
+  <text x="882" y="252" class="s">evidence for and against,</text>
+  <text x="882" y="276" class="s">a test plan, and papers</text>
+  <text x="882" y="300" class="s">that can help.</text>
+  <text x="882" y="334" class="s" style="font-size:13px">Report as HTML or PDF</text>
+
+  <line x1="340" y1="245" x2="448" y2="245" stroke="#0A1526" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="750" y1="245" x2="858" y2="245" stroke="#0A1526" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- branches -->
+  <path d="M1010 360 L1010 392 L760 392 L760 410" fill="none" stroke="#0A1526" stroke-width="2" marker-end="url(#ar)"/>
+  <path d="M1010 392 L1010 410" fill="none" stroke="#0A1526" stroke-width="2" marker-end="url(#ar)"/>
+  <rect x="560" y="410" width="400" height="110" rx="8" class="soft"/>
+  <text x="580" y="438" class="m">CASE 1  PARAMETERS DIFFER</text>
+  <text x="580" y="468" class="s">One recommendation per differing</text>
+  <text x="580" y="492" class="s">parameter, with the reason and a Details page.</text>
+  <rect x="980" y="410" width="200" height="110" rx="8" class="soft"/>
+  <text x="996" y="438" class="m">CASE 2  ALL SAME</text>
+  <text x="996" y="468" class="s">Hidden variables,</text>
+  <text x="996" y="492" class="s">AI-estimated ranges.</text>
+
+  <rect x="40" y="410" width="470" height="110" rx="8" class="soft"/>
+  <text x="60" y="438" class="m">ALWAYS AVAILABLE</text>
+  <text x="60" y="468" class="s">Ask AI answers from the paper pages. Find papers searches</text>
+  <text x="60" y="492" class="s">OpenAlex, Scopus, Crossref and draws a citation network.</text>
+</svg>
