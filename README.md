@@ -70,5 +70,5 @@ OpenAlex and Crossref APIs, and OpenAlex may hit its daily limit.
 - Hidden-variable ranges are AI estimates and are labelled as such.
 - Save PDF needs Edge or Chrome (set `PDF_BROWSER` for another path). Tested on Windows; macOS and Linux are untested.
 
-## License
-MIT, see `LICENSE`. Papers you upload keep their own rights.
+## Papers and data
+Papers you upload keep their own rights.
